@@ -9,27 +9,35 @@ const Computers = ({ isMobile }) => {
 
   if (error) {
     console.error("Error loading GLTF model:", error);
-    return null; // Avoid rendering on error
+    return null;
+  }
+
+  if (isMobile) {
+    return (
+      <img
+        src="./desktop_pc/image.png" // Replace with your 2D image path
+        alt="Desktop Preview"
+        style={{ width: "100%", height: "auto" }}
+      />
+    );
   }
 
   return (
     <mesh>
-      <hemisphereLight intensity={isMobile ? 0.08 : 0.15} groundColor="black" />
-      {isMobile ? null : (
-        <spotLight
-          position={[-20, 50, 10]}
-          angle={0.12}
-          penumbra={1}
-          intensity={0.6}
-          castShadow={false}
-          shadow-mapSize={256}
-        />
-      )}
-      <pointLight intensity={isMobile ? 0.3 : 1} />
+      <hemisphereLight intensity={0.15} groundColor="black" />
+      <spotLight
+        position={[-20, 50, 10]}
+        angle={0.12}
+        penumbra={1}
+        intensity={1}
+        castShadow={false}
+        shadow-mapSize={512}
+      />
+      <pointLight intensity={1} />
       <primitive
         object={scene}
-        scale={isMobile ? 0.5 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        scale={0.75}
+        position={[0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -55,23 +63,29 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    <Canvas
-      frameloop="always"
-      shadows={!isMobile}
-      dpr={isMobile ? [0.8, 1] : [1, 1.5]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true, antialias: !isMobile, powerPreference: "low-power" }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
+    <div style={{ width: "100%", height: "100%" }}>
+      {isMobile ? (
         <Computers isMobile={isMobile} />
-      </Suspense>
-      <Preload all />
-    </Canvas>
+      ) : (
+        <Canvas
+          frameloop="always"
+          shadows
+          dpr={[1, 1.5]}
+          camera={{ position: [20, 3, 5], fov: 25 }}
+          gl={{ preserveDrawingBuffer: true, antialias: true }}
+        >
+          <Suspense fallback={<CanvasLoader />}>
+            <OrbitControls
+              enableZoom={false}
+              maxPolarAngle={Math.PI / 2}
+              minPolarAngle={Math.PI / 2}
+            />
+            <Computers isMobile={isMobile} />
+          </Suspense>
+          <Preload all />
+        </Canvas>
+      )}
+    </div>
   );
 };
 
