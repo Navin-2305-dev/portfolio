@@ -12,16 +12,6 @@ const Computers = ({ isMobile }) => {
     return null;
   }
 
-  if (isMobile) {
-    return (
-      <img
-        src="./desktop_pc/image.png" // Replace with your 2D image path
-        alt="Desktop Preview"
-        style={{ width: "100%", height: "auto" }}
-      />
-    );
-  }
-
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
@@ -64,9 +54,7 @@ const ComputersCanvas = () => {
 
   return (
     <div style={{ width: "100%", height: "100%" }}>
-      {isMobile ? (
-        <Computers isMobile={isMobile} />
-      ) : (
+      {(
         <Canvas
           frameloop="always"
           shadows
