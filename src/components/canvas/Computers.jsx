@@ -12,6 +12,24 @@ const Computers = ({ isMobile }) => {
     return null;
   }
 
+  if (isMobile) {
+    return (
+      <img
+        src="./desktop_pc/image.png"
+        alt="Desktop Preview"
+        style={{
+          width: "90%",
+          maxHeight: "50vh", // Limits height to half the viewport to match 3D model space
+          position: "absolute",
+          top: "60%", // Centers vertically within the container
+          left: "50%", // Centers horizontally
+          transform: "translate(-50%, -50%)", // Adjusts for center alignment
+          objectFit: "contain", // Ensures the image fits without distortion
+        }}
+      />
+    );
+  }
+
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
@@ -53,8 +71,10 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    <div style={{ width: "100%", height: "100%" }}>
-      {(
+    <div style={{ width: "100%", height: "100vh", position: "relative" }}>
+      {isMobile ? (
+        <Computers isMobile={isMobile} />
+      ) : (
         <Canvas
           frameloop="always"
           shadows
