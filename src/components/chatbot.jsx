@@ -65,11 +65,11 @@ const Chatbot = () => {
     setError(null);
 
     try {
-      const response = await fetch("http://localhost:5000/api/chatbot", {
+        const response = await fetch("/api/chatbot", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: messageText }),
-      });
+    });
 
       if (!response.ok) throw new Error(`HTTP error ${response.status}`);
 
