@@ -1,7 +1,9 @@
-google-generativeai
+Flask
+Flask-Cors
 langchain-huggingface
 langchain-community
+PyPDF
 chromadb
-sentence-transformers
+google-generativeai
 python-dotenv
-torch
+sentence-transformers
