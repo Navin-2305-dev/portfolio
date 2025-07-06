@@ -1,0 +1,9 @@
+Flask
+Flask-Cors
+langchain-huggingface
+langchain-community
+PyPDF
+chromadb
+google-generativeai
+python-dotenv
+sentence-transformers
