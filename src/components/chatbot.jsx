@@ -65,7 +65,7 @@ const Chatbot = () => {
     setError(null);
 
     try {
-        const response = await fetch("https://chatbot-portfolio-10.onrender.com/api/chatbot", {
+        const response = await fetch("https://chatbot-portfolio-production.up.railway.app///api/chatbot", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: messageText }),
