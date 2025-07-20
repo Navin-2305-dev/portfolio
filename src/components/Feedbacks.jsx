@@ -33,7 +33,7 @@ const profiles = [
   {
     name: "Resume",
     description: "Download or view my resume to learn more about my experience.",
-    link: "https://drive.google.com/file/d/1f4rYXKhaIWaDP06LMQy-DjB6kPPrLPD6/view",
+    link: "https://drive.google.com/file/d/1cSgPF2T1n5IP016-3GVDtkTmVa1t1F5D/view",
     icon: "https://img.icons8.com/color/96/000000/resume.png",
   },
 ];
