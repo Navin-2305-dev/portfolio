@@ -13,7 +13,6 @@ const Chatbot = () => {
   const chatContainerRef = useRef(null);
   const [particles, setParticles] = useState([]);
 
-  // Generate floating particles for the button
   useEffect(() => {
     if (isOpen) return;
     const newParticles = Array.from({ length: 10 }, (_, i) => ({
@@ -65,7 +64,7 @@ const Chatbot = () => {
     setError(null);
 
     try {
-        const response = await fetch("https://chatbot-portfolio-production.up.railway.app///api/chatbot", {
+        const response = await fetch("https://chatbot-portfolio-production.up.railway.app/api/chatbot", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ query: messageText }),

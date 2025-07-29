@@ -25,18 +25,18 @@ import flutter from "./tech/flutter.png";
 import maestrominds from "./company/maestrominds.jpeg";
 import zootoca from "./company/zootoca.png";
 import ai from "./company/ai.jpeg";
-import thurro from "./company/thurro.jpeg";
 
 import icd from "./icd.png";
 import rag from "./rag.png";
+import portfolio from "./portfolio.png";
 import mediwise from "./mediwise.png";
 
 export {
   logo,
   redis,
+  mediwise,
   icd,
   rag,
-  mediwise,
   backend,
   creator,
   flutter,
@@ -50,6 +50,7 @@ export {
   flask,
   css,
   cpp,
+  portfolio,
   docker,
   zootoca,
   ai,
@@ -60,5 +61,4 @@ export {
   github1,
   django,
   mongodb,
-  thurro,
 };

@@ -9,7 +9,6 @@ import {
   flutter,
   rag,
   python,
-  thurro,
   maestrominds,
   cpp,
   html,
@@ -22,7 +21,7 @@ import {
   redis,
   git,
   docker,
-  icd,
+  portfolio,
 } from "../assets";
 
 export const navLinks = [
@@ -142,6 +141,18 @@ const experiences = [
     ],
   },
   {
+    title: "Software Developer Intern",
+    company_name: "Maestrominds",
+    icon: maestrominds,
+    iconBg: "#383E56",
+    date: "June 2025 - July 2025",
+    points: [
+      "Contributed to the development of the AI Mirror project backend for real-time emotion and mood analysis.",
+      "Built scalable APIs and backend logic using Python and Flask to support dynamic user interaction flows.",
+      "Collaborated with cross-functional teams to ensure seamless integration of AI features and optimize performance.",
+    ],
+  },
+  {
     title: "Backend Developer Intern",
     company_name: "114 AI INNOVATION LLP",
     icon: ai,
@@ -149,22 +160,9 @@ const experiences = [
     date: "Feb 2025 - July 2025",
     points: [
       "Automated manual diagnosis mapping workflows in healthcare systems.",
-      "Developed an ICD code mapping system using NLP and Mistral AI, achieving 91% accuracy.",
+      "Developed an AI-based healthcare solution using NLP and Mistral AI, achieving 91% accuracy.",
       "Gained hands-on experience with RAG techniques, Redis Database and other related technologies.",
       "Designed and deployed scalable backend services using Python, Django, and RAG.",
-    ],
-  },
-  {
-    title: "Python Developer Intern",
-    company_name: "Thurro",
-    icon: thurro,
-    iconBg: "#ffffff",
-    date: "June 2025 - Present",
-    points: [
-      "Developing and maintaining Software systems using Python and related frameworks.",
-      "Integrating third-party APIs and optimizing server-side performance.",
-      "Collaborating with product and engineering teams to build scalable features.",
-      "Using Git for version control and following agile development practices.",
     ],
   },
 ];
@@ -196,30 +194,26 @@ const projects = [
     source_code_link: "https://github.com/Navin-2305-dev/MediWise",
   },
   {
-    name: "ICD Code Mapper",
-    description:
-      "This project automates the assignment of ICD (International Classification of Diseases) codes to patient medical data. This System intelligently maps patient data to most relevant ICD codes. Mistral AI was integrated to enhance contextual understanding, achieving 91% accuracy in ICD prediction.",
-    tags: [
-      {
-        name: "Django",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Mistral AI",
-        color: "green-text-gradient",
-      },
-      {
-        name: "RAG",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Redis",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: icd,
-    source_code_link: "https://github.com/Navin-2305-dev/ICD-Code-Matching",
-  },
+  name: "AI-Powered Portfolio Website",
+  description:
+    "This portfolio showcases my skills and projects with an interactive, AI-powered chatbot built using a Retrieval-Augmented Generation (RAG) approach. The frontend is built on a responsive template.",
+  tags: [
+    {
+      name: "RAG",
+      color: "pink-text-gradient",
+    },
+    {
+      name: "Flask",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "React",
+      color: "green-text-gradient",
+    },
+  ],
+  image: portfolio,
+  source_code_link: "https://github.com/Navin-2305-dev/chatbot-portfolio",
+},
   {
     name: "AskMyDoc",
     description:
@@ -247,4 +241,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
