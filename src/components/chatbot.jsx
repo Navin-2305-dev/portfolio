@@ -115,11 +115,11 @@ const Chatbot = () => {
   };
   
   const quickQuestions = [
-    "What are Navin's skills?",
+    "What are Navin's skills ?",
     "Tell me about a key project",
     "Summarize Navin's experience",
-    "Where did Navin study?",
-    "Does Navin have certifications?",
+    "Where did Navin study ?",
+    "Tell me about Navin's certification ?",
   ];
 
   return (
