@@ -1,4 +1,4 @@
-# 💼 Navin B – Portfolio Video
+# 💼 Navin B – Portfolio 
 
 Welcome to my professional portfolio repository! This repository containsmy Portfolio that highlights my skills, projects, achievements, and the technologies I’ve worked with.
 
