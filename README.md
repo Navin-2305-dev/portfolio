@@ -31,7 +31,7 @@ maintainability. Excellent collaborator with strong communication and remote tea
 
 Feel free to connect or collaborate:
 
-- 📧 **Email**: [navinking2305@gmail.com]
+- 📧 **Email**: [navinb.dev@gmail.com]
 - 💼 **LinkedIn**: [linkedin.com/in/navin-b](https://www.linkedin.com/in/navinb23)
 - 🌐 **Website/Portfolio**: [your-portfolio-site.com] 
 
