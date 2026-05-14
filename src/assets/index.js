@@ -25,6 +25,7 @@ import flutter from "./tech/flutter.png";
 import maestrominds from "./company/maestrominds.jpeg";
 import zootoca from "./company/zootoca.png";
 import ai from "./company/ai.jpeg";
+import ibm from "./company/ibm.png";
 
 import icd from "./icd.png";
 import rag from "./rag.png";
@@ -32,6 +33,7 @@ import portfolio from "./portfolio.png";
 import mediwise from "./mediwise.png";
 
 export {
+  ibm,
   logo,
   redis,
   mediwise,

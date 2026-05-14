@@ -13,6 +13,7 @@ import {
   cpp,
   html,
   css,
+  ibm,
   github1,
   ai,
   mediwise,
@@ -165,6 +166,19 @@ const experiences = [
       "Designed and deployed scalable backend services using Python, Django, and RAG.",
     ],
   },
+  {
+    title: "Software Developer Intern",
+    company_name: "IBM India",
+    icon: ibm,
+    iconBg: "#ffffff",
+    date: "Jan 2026 - July 2026",
+    points: [
+      "Contributed to IBM India’s internal AskSales application to enhance sales support and automation workflows.",
+      "Developed a log analysis system to process nearly 2 years of AskSales usage logs and generate weekly insights.",
+      "Worked on document ingestion and implemented hybrid search using Elasticsearch and vector search for improved retrieval.",
+      "Collaborated on RAG-based enhancements and IBM internal technologies to improve AskSales performance and usability.",
+    ],
+  }
 ];
 
 const projects = [
