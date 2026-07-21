@@ -178,6 +178,18 @@ const experiences = [
       "Worked on document ingestion and implemented hybrid search using Elasticsearch and vector search for improved retrieval.",
       "Collaborated on RAG-based enhancements and IBM internal technologies to improve AskSales performance and usability.",
     ],
+  },
+  {
+    title: "Software Developer",
+    company_name: "IBM India",
+    icon: ibm,
+    iconBg: "#ffffff",
+    date: "July 2026 - Present",
+    points: [
+      "Joined IBM as a Full-Time Software Developer, working on enterprise-scale AI-powered solutions and next-generation technologies.",
+      "Contributing to AskSales, IBM’s Sales Enablement platform, by developing Agentic AI features and leveraging advanced data capabilities to empower sales teams.",
+      "Actively exploring emerging technologies and modern development practices to deliver impactful business solutions and accelerate professional growth."
+    ],
   }
 ];
 
